@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) { //onCreate is called only once in its lifetime!!
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -20,3 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+//onStart() - ko se activity naredi in smo na njem je onStart()
+//onPause() - ko zgubimo fokus activitija/gremo na drug activity, ce se vrnemo na zaj pride nazaj v onStart()
+//onStop() - ce gremo vn iz aplikacije, ko pridemo nazaj se klice onRestart(), onResume()
+//onDestroy() - unici activity
