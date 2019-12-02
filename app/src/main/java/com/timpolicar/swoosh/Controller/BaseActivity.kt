@@ -1,4 +1,4 @@
-package com.timpolicar.swoosh
+package com.timpolicar.swoosh.Controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
